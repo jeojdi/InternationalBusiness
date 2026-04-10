@@ -1,0 +1,34 @@
+{
+  "name": "fig-tim-tam-website",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://jeojdi.github.io/InternationalBusiness",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
+  },
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "mapbox-gl": "^3.21.0",
+    "next": "16.2.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/mapbox-gl": "^3.4.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.3",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

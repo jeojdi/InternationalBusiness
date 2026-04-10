@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  /* Fig-Inspired Color Palette */
+  --fig-purple: #5D3A6B;
+  --sage-green: #7C9885;
+  --aussie-gold: #D4AF37;
+  --earth-brown: #8B6F47;
+  --cream: #F5F3EF;
+  --charcoal: #2C2C2C;
+  --soft-pink: #D4A5A5;
+
+  --background: #F5F3EF;
+  --foreground: #2C2C2C;
+}
+
+@theme inline {
+  /* Custom Colors */
+  --color-fig-purple: #5D3A6B;
+  --color-sage-green: #7C9885;
+  --color-aussie-gold: #D4AF37;
+  --color-earth-brown: #8B6F47;
+  --color-cream: #F5F3EF;
+  --color-charcoal: #2C2C2C;
+  --color-soft-pink: #D4A5A5;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Mapbox CSS */
+.marker {
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.marker:hover {
+  transform: scale(1.1);
+}
+
+/* Screen reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Animations for reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
